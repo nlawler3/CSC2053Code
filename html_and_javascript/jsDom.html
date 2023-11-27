@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <script src="scripts/domDemo.js"></script>
+  </head>
+  <!-- <body onload = "afterLoading()"> -->!
+    <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accessibility.html">Accessibility</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript.html">JavaScript</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="react.html" >React</a>
+            </li>
+          </ul>
+        </div>
+        </div> <!-- end row -->
+        <div class="row">
+          <div class="col">
+            <h1>DOM Demo</h1> 
+          </div>
+         </div> <!-- end row -->
+        <div class="row mt-5">
+          <div class="col">
+            <h4>Bank Accounts</h4>
+          </div>
+        </div>
+          <div class="col mt-3">
+            <table class="table">                
+                <tr>
+                    <th scope="col">Account</th>
+                    <th scope="col">Balance</th>
+                </tr>
+                <tr>
+                    <td>Checking</td>
+                    <td id ="checkingBalance">500</td>
+                </tr>
+                <tr>
+                    <td>Savings</td>
+                    <td id="savingsBalance">1000</td>
+                </tr>
+            </table>
+            <div class="row mt-3"">
+           <div class="col"">
+            <button type="button" class="btn btn-primary" onclick="depositChecking()">Deposit $100 Checking</button>    <br>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary" onclick="depositSavings()">Deposit $100 Savings</button> <br>   
+             </div>
+            <div class="col"">
+            <button type="button" class="btn btn-primary" onclick="emptySavings()">Empty Savings</button>    <br>
+        </div>    
+        </div>
+          </div>
+         
+        </div> <!-- end row -->
+        <div id="end"></div>
+        </div>
+  </body>
+</html>
