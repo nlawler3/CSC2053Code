@@ -1,3 +1,5 @@
+# adding a comment to this dog class
+
 class Dog:
 
     def __init__(self, name, tricks, breed, hungry=True):
